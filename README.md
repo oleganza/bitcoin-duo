@@ -1,9 +1,13 @@
-Bitcoin Core integration/staging tree
-=====================================
+Bitcoin Core Duo
+================
 
-[![Build Status](https://travis-ci.org/bitcoin/bitcoin.svg?branch=master)](https://travis-ci.org/bitcoin/bitcoin)
+What is Bitcoin Core Duo?
+-------------------------
 
-https://www.bitcoin.org
+It's a bitcoin node that keeps track of both chains: [XT](https://bitcoinxt.software) and [Core](https://bitcoin.org). 
+It does so by keeping track of 2 UTXO views: one for Core chain, another for XT chain. Each transaction has two confirmation numbers: one for each chain.
+If there is a transitional period with uncertainty about which chain will win, users may watch for their transactions to be confirmed on both chains.
+
 
 What is Bitcoin?
 ----------------
